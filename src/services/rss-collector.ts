@@ -16,8 +16,9 @@ const parser = new Parser({
 });
 
 // RSS 피드 목록
+const googleNewsQuery = encodeURIComponent('타이어 OR 자동차');
 const feedList: FeedSource[] = [
-  { name: '구글 뉴스 (한국)', url: 'https://news.google.com/rss/search?q=타이어%20OR%20자동차&hl=ko&gl=KR&ceid=KR:ko', category: 'news' },
+  { name: '구글 뉴스 (한국)', url: `https://news.google.com/rss/search?q=${googleNewsQuery}&hl=ko&gl=KR&ceid=KR:ko`, category: 'news' },
   { name: 'Google AI Blog', url: 'https://blog.google/technology/ai/rss/', category: 'tech' }
   // 필요한 피드 추가
 ];

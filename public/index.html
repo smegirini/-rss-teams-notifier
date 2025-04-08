@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>뉴스 피드</title>
+    <!-- Google Fonts (Noto Sans KR) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>최신 뉴스 피드</h1>
+
+    <!-- 카테고리 필터 버튼 영역 -->
+    <div id="category-filters">
+        <button class="filter-button active" data-category="all">전체</button>
+        <!-- 카테고리 버튼이 동적으로 추가됩니다 -->
+    </div>
+
+    <div id="news-container">
+        <!-- 로딩 메시지 또는 뉴스 카드가 여기에 표시됩니다. -->
+        <p id="loading-message">뉴스 로딩 중...</p>
+    </div>
+
+    <!-- 페이지네이션 영역 -->
+    <div id="pagination-container">
+        <!-- 페이지 번호 버튼이 동적으로 추가됩니다 -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
